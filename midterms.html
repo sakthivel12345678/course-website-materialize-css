@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Web Systems and Technology | Midterms</title>
+  <meta charset="UTF-8">
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen" />
+  <link type="text/css" rel="stylesheet" href="css/style.css" media="screen" />
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="js/smooth-scroll.js"></script>
+</head>
+
+<body>
+  <nav class="z-depth-0" id="nav-prelims">
+    <ul id="nav-title" class="side-nav fixed">
+      <li>Midterms</li>
+      <li><a data-scroll href="#html">HTML</a>
+        <ul class="nested-menu">
+          <li>
+            <a data-scroll href="#definiton">Definition</a>
+            <a data-scroll href="#role">Role</a>
+            <a data-scroll href="#versionshtml">Versions</a>
+            <a data-scroll href="#attrib">Attributes</a>
+            <a data-scroll href="#element">Elements</a>
+          </li>
+        </ul>
+      </li>
+      <li><a data-scroll href="#css">CSS</a>
+        <ul class="nested-menu">
+          <li>
+            <a data-scroll href="#versions">Versions</a>
+          </li>
+          <li>
+            <a data-scroll href="#stylesheet">Stylesheet</a>
+          </li>
+          <li>
+            <a data-scroll href="#preprocessors">CSS Preprocessors</a>
+          </li>
+          <li>
+            <a data-scroll href="#cssselector">CSS Selector</a>
+          </li>
+          <li>
+            <a data-scroll href="#selectorsyntax">Selector Syntax</a>
+          </li>
+          <li>
+            <a data-scroll href="#ruleprecedence">Rule of Precedence</a>
+          </li>
+          <li>
+            <a data-scroll href="#cssdeclaration">CSS Declaration</a>
+          </li>
+        </ul>
+      </li>
+      <li><a data-scroll href="#javascript">Javascript</a>
+        <ul class="nested-menu">
+          <li>
+            <a data-scroll href="#clientSide">Client Side Scripting</a>
+            <a data-scroll href="#assocSripts">Associating Scripts</a>
+            <a data-scroll href="#typesOfCode">Types of Code</a>
+            <a data-scroll href="#externalScripts">External Scripts</a>
+            <a data-scroll href="#windowObject">Window Object</a>
+            <a data-scroll href="#docObject">Document Object</a>
+            <a data-scroll href="#constructs">Constructs</a>
+            <a data-scroll href="#jsFunctions">Functions</a>
+            <a data-scroll href="#jsArrays">Arrays</a>
+            <a data-scroll href="#jsObjects">Objects</a></li>
+        </ul>
+    </ul>
+  </nav>
+  <div id="midterms">
+    <nav id="main-nav" class="z-depth-0">
+      <div class="nav-wrapper ">
+        <a href="index.html" class="brand-logo">WebTek</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a class="underline" href="index.html">Home</a></li>
+          <li><a class="underline" href="prelims.html">Prelims</a></li>
+          <li><a class="underline" href="midterms.html">Midterms</a></li>
+          <li><a class="underline" href="finals.html">Finals</a></li>
+        </ul>
+        <ul class="side-nav z-depth-0" id="mobile-demo">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="prelims.html">Prelims</a>
+            <ul class="nested-list">
+              <li><a data-scroll href="prelims.html#www">World Wide Web</a></li>
+              <li><a data-scroll href="prelims.html#http">HTTP</a></li>
+            </ul>
+
+          </li>
+          <li><a href="midterms.html">Midterms</a>
+            <ul class="nested-list">
+              <li><a data-scroll href="midterms.html#html">HTML</a></li>
+              <li><a data-scroll href="midterms.html#css">CSS</a></li>
+              <li><a data-scroll href="midterms.html#js">Javascript</a></li>
+            </ul>
+
+          </li>
+          <li><a href="finals.html">Finals</a>
+            <ul class="nested-list">
+              <li><a data-scroll href="finals.html#java">Java</a></li>
+              <li><a data-scroll href="finals.html#php">PHP</a></li>
+              <li><a data-scroll href="finals.html#nodejs">Node JS</a></li>
+              <li><a data-scroll href="finals.html#securityrisk">Security Risks</a></li>
+            </ul>
+
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id="html">
+      <h2>HTML</h2>
+      <div class="container" id="elements">
+        <ul class="collapsible" data-collapsible="expandable">
+          <li id="definition">
+            <div class="collapsible-header">
+              What is HTML?
+            </div>
+            <div class="collapsible-body">
+              <p>- HTML (Hypertext Markup Language) is the language for describing the structure of Web pages.</p>
+              <p>- A language used to get resources that's using special notation.</p>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header">
+              What is the role of HTML in modern web development?
+            </div>
+            <div class="collapsible-body">
+              <ul>
+                <li>Stucture and Content - Modern HTML</li>
+                <li>Presentational Aspects/Aethetics - CSS</li>
+                <li>Behavioral - JS</li>
+              </ul>
+            </div>
+          </li>
+
+          <li id="role">
+            <div class="collapsible-header">
+              Who invented HTML?
+            </div>
+            <div class="collapsible-body">
+              <p>Sir. Tim Berners-Lee</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="collapsible-header">
+              Who oversees the development of HTML?
+            </div>
+            <div class="collapsible-body">
+              <p>World Wide Web Consortium (W3C)</p>
+            </div>
+          </li>
+          <li id="versions">
+            <div class="collapsible-header">
+              Version History
+            </div>
+            <div class="collapsible-body">
+              <ul>
+                <li>HTML 1.0 </li>
+                <li>HTML 2.0</li>
+                <li>HTML 3.0</li>
+                <li>HTML 3.2</li>
+                <li>HTML 4.01</li>
+                <li>XHTML 1.0</li>
+                <li>HTML5</li>
+                <li>HTML5.1</li>
+              </ul>
+            </div>
+          </li>
+          <li id="attrib">
+            <div class="collapsible-header">
+              HTML Attributes
+            </div>
+            <div class="collapsible-body">
+              <ul>
+                <li>Global </li>
+                <li>Element</li>
+                <li>data -*</li>
+                <li>role,aria -*</li>
+              </ul>
+            </div>
+          </li>
+          <li id="element">
+            <div class="collapsible-header">
+              Elements of HTML
+            </div>
+            <div id="elementsTree" class="collapsible-body">
+              <ul>
+                <li>html
+                  <ul class="container">
+                    <li> head
+                      <ul class="container">
+                        <li> title, base, link, meta, style</li>
+                      </ul>
+                    </li>
+                    <li> body
+                      <ul class="container">
+                        <li class="html5"> article, aside, nav, section</li>
+                        <li class="html5"> header, footer</li>
+                        <li> main</li>
+                        <li> address</li>
+                        <li> div</li>
+                        <li></li>
+                        <li> h1,h2,h3,h4,h5,h6<br></li>
+
+                        <li> p</li>
+                        <li> hr</li>
+                        <li> pre</li>
+                        <li> blockquote</li>
+                        <li> ol,ul
+                          <ul class="container">
+                            <li> li</li>
+                          </ul>
+                        </li>
+                        <li> dl
+                          <ul class="container">
+                            <li> dt,dd</li>
+                          </ul>
+                        </li>
+                        <li> figure
+                          <ul class="container">
+                            <li> figcaption<br></li>
+                          </ul>
+                        </li>
+
+                        <li> a</li>
+                        <li> em,strong,small,s</li>
+                        <li> cite,q</li>
+                        <li> dfn, abbr</li>
+                        <li class="html5"> ruby,rb,rt,rtc,rp
+                        </li>
+                        <li> data,time</li>
+                        <li> code,var,samp,kbd</li>
+                        <li> sup,sub</li>
+                        <li> i,b,u,mark</li>
+                        <li> bdi, bdo</li>
+                        <li> span</li>
+                        <li> br</li>
+                        <li> wbr</li>
+                        <li> ins,del<br></li>
+
+                        <li> table
+                          <ul class="container">
+                            <li> caption</li>
+                            <li> colgroup, col</li>
+                            <li> thead, tbody, tfoot</li>
+                            <li> tr</li>
+                            <li> th,td</li>
+                          </ul>
+                          <br>
+                        </li>
+                        <li> form
+                          <ul class="container">
+                            <li> label</li>
+                            <li> input</li>
+                            <li> button</li>
+                            <li> select</li>
+                            <li> textarea</li>
+                          </ul>
+                          <br>
+                        </li>
+                        <li> picture</li>
+                        <li> img</li>
+                        <li> iframe, embed</li>
+                        <li> object</li>
+                        <li> param</li>
+                        <li> source, video, audio, track</li>
+                        <li> map</li>
+                        <li> area</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+        </ul>
+      </div>
+    </section>
+    <section id="css">
+      <h2>CSS</h2>
+      <div class="container">
+        <p>- Used for aesthetics (e.g. Layout and Formatting)</p>
+        <p>- Used to give a specific presentation manner</p>
+        <p>- Developed by Håkon Wium Lie Bert Bos </p>
+        <p>- World Wide Web Consortium</p>
+        <br>
+        <ul class="collapsible" data-collapsible="expandable">
+          <li>
+            <div class="collapsible-header" id="versionshtml">
+              CSS Versions (W3C)
+            </div>
+            <div class="collapsible-body">
+              <ul class="nested-list">
+                <li>
+                  <ul>
+                    <li>CSS 1 &nbsp;&nbsp;: December 1997</li>
+                    <li>CSS 2.1&nbsp;: June 2011</li>
+                    <li>CSS 3 &nbsp;&nbsp;: April 12, 2016</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header" id="stylesheet">
+              Stylesheet
+            </div>
+            <div class="collapsible-body">
+              <p>Stylesheet is a form of separation of presentation and content for web design in which the markup (i.e., HTML or XHTML) of a webpage contains the page's semantic content and structure, but does not define its visual layout (style).
+              </p><br>
+              <ul class="nested-list">
+                <li>
+                  <ul>
+                    <li>AUTHOR STYLE&nbsp;&nbsp; &nbsp;&nbsp;: Used by the Server</li>
+                    <li>USER STYLE&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; : Used by the User</li>
+                    <li>USER AGENT STYLE : Default stylesheet for HTML4 (e.g. Chrome, webstore, browser)</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header" id="preprocessors">
+              CSS Preprocessors
+            </div>
+            <div class="collapsible-body">
+              <p>- A CSS preprocessor helps you write maintainable, future-proof code and it will seriously reduce the amount of CSS you have to write.</p>
+              <ul class="nested-list">
+                <li>CSS Preprocessor Options:
+                  <ul>
+                    <li>Sass</li>
+                    <li>Less</li>
+                    <li>Stylus</li>
+                    <li>CSS-Crush</li>
+                    <li>Myth</li>
+                    <li>Rework</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header" id="cssselector">
+              CSS Selectors
+            </div>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  - Structure used as a condition in a CSS rule to determine which elements in the document tree are matched by the selector and are thus targeted by the formatting specified in the CSS rule declaration block
+                </li>
+                <li>
+                  - the matched elements are called the subjects of the selector
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header" id="selectorsyntax">
+              Selector Syntax
+            </div>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  - Used as a condition in a CSS Rule to determine who elements in the documents true are matched by the selcctor and thus targeted by the formatting specified CSS. <br><br>
+                </li>
+                <li><span class="css-sub-head">Basic Selectors</span></li>
+                <li>
+                  <ul class="nested-list">
+                    <li><strong>Type Selectors</strong></li>
+                    <li>Chooses all elements with the same tags</li>
+                    <li><em>Example: </em> body, header, nav, div</li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul class="nested-list">
+                    <li><strong>Class Selectors</strong></li>
+                    <li>Chooses all elements with the same class values.</li>
+                    <li><em>Example: </em> .index, .container, .row, .column</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="nested-list">
+                    <li><strong>ID Selectors</strong></li>
+                    <li>Chooses an element based on value of the id attribute.</li>
+                    <li><em>Example: </em> #css, #selectors, #rule</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="nested-list">
+                    <li><strong>Universal Selectors</strong></li>
+                    <li>Chooses all the element in the web page</li>
+                    <li><em>Example: </em> *</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="nested-list">
+                    <li><strong>Attribute Selectors</strong></li>
+                    <li>Chooses all element based on the value of one of its attributes</li>
+                    <li><em>Example: </em> [value="name"], </li>
+                  </ul>
+                </li>
+                <li><span class="css-sub-head">Combinators</span>
+                  <ul class="nested-list">
+                    <li><strong>Type Selectors</strong></li>
+                    <li>Chooses all elements with the same tags</li>
+                    <li><em>Example: </em> body, header, nav, div</li>
+                  </ul>
+                <li>
+                  <ul class="nested-list">
+                    <li><strong>Adjacent Sibling Selectors</strong></li>
+                    <li>Uses the '+' combinator to select elements that <em>immediately</em> follow the initial specified element.</li>
+                    <li><em>Example: </em> container + sub-container </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul class="nested-list">
+                    <li><strong>General Sibling Selectors</strong></li>
+                    <li>Uses the '~' combinator to select elements that follow the initial specified element under the same parent.</li>
+                    <li><em>Example: </em> p ~ span </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="nested-list">
+                    <li><strong>Child Selectors</strong></li>
+                    <li>Uses the '>' combinator to select elements that are <em>direct</em> children of the former specified element</li>
+                    <li><em>Example: </em> ol > li </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="nested-list">
+                    <li><strong>Descendant Selectors</strong></li>
+                    <li>Uses the ' ' combinator to select elements that are children of the former specified element</li>
+                    <li><em>Example: </em> div span </li>
+                  </ul>
+                </li>
+                <li><span class="css-sub-head">Pseudo-Elements</span></li>
+                <li> -used to style specific part of an element</li>
+                <li><em>Example:</em> ::first-line, ::first-letter</li>
+                <li><span class="css-sub-head">Pseudo Classes</span></li>
+                <li> -used to define a state of an element which is changes when a user interacts with links, hover to some elements, and etc.</li>
+                <li>
+                  <ul class="nested-list">
+                    <li><strong>Dynamic Pseudo-classes</strong></li>
+                    <li>Link Pseudo-Classes</li>
+                    <li>:link</li>
+                    <li>:visited</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="nested-list">
+                    <li><strong>User Action Pseudo-Classes</strong></li>
+                    <li>:hover</li>
+                    <li>:active</li>
+                    <li>focus</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="nested-list">
+                    <li><strong>Target Pseudo-Class</strong></li>
+                    <li>:target (CSS3)</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="nested-list">
+                    <li><strong>Language Pseudo-Class</strong></li>
+                    <li>:lang()</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="nested-list">
+                    <li><strong>UI Element states Pseudo-Class</strong></li>
+                    <li>:lang()</li>
+                    <li>:enabled (CSS3)</li>
+                    <li>:disabled (CSS3)</li>
+                    <li>:checked (CSS3)</li>
+                    <li>:indeterminate (CSS3)</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="nested-list">
+                    <li><strong>Structural Pseudo-Class</strong></li>
+                    <li>:root</li>
+                    <li>:first-child</li>
+                    <li>:last-child</li>
+                    <li>:only-child</li>
+                    <li>:nth-child()</li>
+                    <li>:nth-last-child</li>
+                    <li>:first-of-type</li>
+                    <li>:last-of-type</li>
+                    <li>:only-of-type</li>
+                    <li>:nth-of-type()</li>
+                    <li>:empty</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="nested-list">
+                    <li><strong>Negation Pseudo-Class</strong></li>
+                    <li>:not (CSS3)</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header" id="ruleprecedence">
+              Rule of Precedence
+            </div>
+            <div class="collapsible-body">
+              <ul>
+                <li><span class="css-sub-head"> By Origin and Importance</span></li>
+                <li>
+                  <ul class="nested-list">
+                    <li>user agent important declarations</li>
+                    <li>user important declarations</li>
+                    <li>author important declarations</li>
+                    <li>author normal declarations</li>
+                    <li>user normal declarations</li>
+                    <li>user agent normal declration</li>
+                  </ul>
+                </li>
+
+                <li><span class="css-sub-head"> By Specifity</span></li>
+                <li>
+                  <ul class="nested-list">
+                    <li>inline style</li>
+                    <li>number of ID selectors</li>
+                    <li>number of class selectors</li>
+                    <li>attribute selectors and pseudo-classes</li>
+                    <li>number and type selectors and pseudo-elements</li>
+                  </ul>
+                </li>
+                <li><span class="css-sub-head"> By Order</span></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header" id="cssdeclaration">
+              CSS Declaration
+            </div>
+            <div class="collapsible-body">
+              <ul class="nested-list">
+                <li>initial</li>
+                <li>inherit</li>
+                <li>revert</li>
+                <li>unset</li>
+                <li>properties
+                  <ul>
+                    <li>- shorthand properties</li>
+                    <li>- vendor specific extension</li>
+                  </ul>
+                </li>
+                <li>values
+                  <ul>
+                    <li>keywords</li>
+                    <li>numbers</li>
+                    <li>dimension</li>
+                    <li>percentage</li>
+                    <li>URLs and URIs</li>
+                    <li>colors</li>
+                    <li>strings</li>
+                    <li>functions</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="javascript">
+      <h2>Javascript</h2>
+      <div class="container">
+        <p>- Originally developed by NetScape</p>
+        <p>- Used to make web pages interactive.</p>
+        <p>- Supported by all major web browsers, including Google Chrome, Edge (formerly IE), Firefox and Safari</p><br>
+        <ul class="collapsible" data-cllapsible="expandible">
+          <li>
+            <div class="collapsible-header" id="clientSide">
+              Client side scripting
+            </div>
+            <div class="collapsible-body">
+              <ul>
+                <li>Running the program in the website</li>
+                <li>Execution of program in the browser</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header" id="assocSripts">
+              Associating Scripts
+            </div>
+            <div class="collapsible-body">
+              <ul>
+                <li>a. externally linked</li>
+                <li>b. embedding</li>
+                <li>c. inline</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header" id="typesOfCode">
+              Types of code
+            </div>
+            <div class="collapsible-body">
+              <ul>
+                <li>top-level / global code<br>
+                  <span class="emphasis">- executes on the fly</span>
+                </li>
+                <li>function<br>
+                  <span class="emphasis">has to be called to execute</span></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header" id="externalScripts">
+              Externally linked scripts
+            </div>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  defer<br>
+                  <span class="emphasis">- fetching the script then continue rendering the HTML</span><br>
+                  <span class="emphasis">- compiles the script after its done being fethced</span>
+                </li>
+                <li>
+                  async<br>
+                  <span class="emphasis">- asynchronous</span><br>
+                  <span class="emphasis">- parsing the document while fetching the script</span><br>
+                  <span class="emphasis">- if available compile and execute</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header" id="windowObject">
+              Window Object
+            </div>
+            <div class="collapsible-body">
+              <ul>
+                <li>- global objects, functions, and variables automatically become members of the window object of javascript</li>
+                <li>- supported by all browsers</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header" id="docObject">
+              Document Object
+            </div>
+            <div class="collapsible-body">
+              <ul>
+                <li><span class="emphasis"> - allows interaction between js and html</span></li>
+                <li>innerhtml
+                  <br><span class="emphasis"> - allows html elements to be parsed</span></li>
+                <li>outerhtml<br>
+                  <span class="emphasis"> - replaces the whole markup</span></li>
+                <li>
+                  Document<br>
+                  <span class="emphasis">e.g.</span>
+                  <ul class="nested-list">
+                    <li>getElementbyId</li>
+                    <li>getElementByClass</li>
+                    <li>getElementByName</li>
+                    <li>getElementByTagName</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header" id="constructs">
+              Constructs
+            </div>
+            <div class="collapsible-body">
+              <span class="css-sub-head">Javascript</span>
+              <ul class="nested-list">
+                <li>- imperative programming language</li>
+                <li>- dynamically-typed</li>
+                <li>- weakly typed</li>
+              </ul>
+              <br>
+              <span class="css-sub-head">Variables</span>
+              <ul class="nested-list">
+                <li>let<br><span class="emphasis">- only exists inside the block declared in</span></li>
+                <li>var<br><span class="emphasis">- becomes a property of the global object</span></li>
+                <li>const<br><span class="emphasis">- cannot be reassigned/ need initialization</span></li>
+              </ul>
+              <br>
+              <span class="css-sub-head">Types of Data</span>
+              <br> simple
+              <ul class="nested-list">
+                <li>- numbers</li>
+                <li>- strings</li>
+                <li>- boolean</li>
+              </ul>
+              Primitive
+              <ul class="nested-list">
+                <li>- undefined</li>
+                <li>- null</li>
+              </ul>
+              <span class="css-sub-head">Structures</span>
+              <ul class="nested-list">
+                <li>- array</li>
+                <li>- wrapper classes</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header" id="jsFunctions">
+              Functions
+            </div>
+            <div class="collapsible-body">
+              - also an object<br> '()' - invocation
+              <br>
+              <span class="emphasis"> e.g.</span>
+              <pre>
+                                    <code>
+        function greater(v1, v2) {
+               if (v1 > v2) {
+                   return v1;
+               } else if(v2 > v1){
+                   return v2;
+               }
+           }
+
+                                   </code>
+                               </pre>
+
+              <span class="css-sub-head">Function Expresssions</span>
+              <pre>
+                                    <code>
+        e.g.
+
+        (function(a, b) {return a+b;} (10,20))
+
+       ADD
+           var add = new function(a,b,return a+b);
+           var sum = add(10,20);
+
+       SUBTRACT
+           var subtract = function(a,b){
+               return a-b;
+           }
+           var difference = subtract(10,20);
+
+                                   </code>
+                               </pre>
+              <span class="css-sub-head">Arrow Syntax</span>
+              <pre>
+                                    <code>
+        e.g
+
+           var multiply = (a,b) => {return a*b;}
+           var product = multiply(10,20);
+
+           var divide = (a,b) => a/b;
+           var quotient = divide(20,10);
+
+           var triple = n => 3*n;
+           var thrice = triple(5);
+
+           var zero = () => 0;
+
+                                   </code>
+                               </pre>
+              <span class="css-sub-head">Functions can be recursive</span>
+              <pre>
+                                    <code>
+        e.g.
+            function factorial(n){
+                if( n &lt; 0){
+                    throw "invalid argument";
+                }else if(n == 0){
+                    return 1;
+                } else {
+                    return n*factorial(n-1);
+                }
+            }
+
+                                   </code>
+                               </pre>
+              <span class="css-sub-head">Functions can be nested</span>
+              <pre>
+                                    <code>
+        function outer(){
+           //some codes here ...
+
+           function inner(){
+               //inner func codes ...
+           }
+
+           //some more codes here ...
+       }
+                                   </code>
+                               </pre>
+
+              <span class="css-sub-head">'this', 'arguments', and 'apply'</span>
+              <ul>
+                <li>
+                  “this” <br><span class="emphasis">this object which you are invoking </span>
+
+                </li>
+                <li>
+                  “arguments”<br>
+                  <span class="emphasis">- arguments you use to call, organized like arrays.<br>
+                    <span class="emphasis">-only exists in the function</span></span>
+                </li>
+              </ul>
+
+
+              <pre>
+                                    <code>
+        function args(){
+            console.log(this);
+            console.log(arguments.length);
+            for(let I = 0; i&lt;arguments.length; i++){
+               console.log(aruments[i]);
+           }
+        }
+
+        args();
+        args(1,2,3);
+        args.apply('hi',[1,2,3,4]);
+
+                                   </code>
+                               </pre>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header" id="jsArrays">
+              Arrays
+            </div>
+            <div class="collapsible-body">
+              <pre>
+                                    <code>
+        e.g.
+
+        var emptyArray = new Array();
+        var alsoEmptyArray = [];
+
+        var arrayWithLengthFive = new Array (5);
+        var arrayWithOneElementWithValue5 = [5];
+
+        var arraw = new Array ('5');
+        var sameArray = ['5'];
+
+        ... - spread syntax
+
+        var multiDimArray = [
+            [ 'apple' , 'banana' , 'orange' ],
+            [ 4 , 5 , 6 , [ true , false , false ] , 7 , 8 ],
+            []
+        ];
+
+                                   </code>
+                               </pre>
+              <span class="css-sub-head">Array Destructuring</span>
+              <pre>
+                                   <code>
+        var array = [1,2,3,4,5];
+        var [a,b,c,d,e] = array;
+        var [,x,,y] = array;
+        var [m,n,...others] = array;
+                                   </code>
+                               </pre>
+
+              <span class="css-sub-head">Array Methods</span><br> Mutator Methods<br>
+              <span class="emphasis">- change array value (mutate)</span> e.g.
+              <ul class="nested-list">
+                <li>pop()</li>
+                <li>push</li>
+                <li>recerse()</li>
+                <li>shift()</li>
+                <li>sort</li>
+                <li>splice</li>
+                <li>unshift</li>
+                <li>etc.</li>
+              </ul>
+
+
+              Accessor Methods<br> e.g
+              <ul class="nested-list">
+                <li>concat()</li>
+                <li>includes()</li>
+                <li>indexof()</li>
+                <li>join()</li>
+                <li>etc.</li>
+              </ul>
+
+              Iteration Methods <br>
+              <span class="emphasis">- iterate through methods one by one and apply a function</span><br> e.g
+              <ul class="nested-list">
+                <li>a.filter(function);</li>
+                <li>a.map( v , i , a )</li>
+                <li>etc.</li>
+              </ul>
+
+            </div>
+
+
+          </li>
+          <li>
+            <div class="collapsible-header" id="jsObjects">
+              Objects
+            </div>
+            <div class="collapsible-body">
+              <span class="emphasis">- based on a prototype of an object</span>
+              <pre>
+                                    <code>
+    var emptyObj = new object();
+    var alsoEmptyObj = {};
+
+    e.g.
+    student.idno = '2150123’''
+    student['name'] = ‘Juan Dela Cruz’;
+                                    </code>
+                                </pre>
+
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+  </div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
