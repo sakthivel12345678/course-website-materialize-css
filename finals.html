@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Web Systems and Technology | Finals</title>
+  <meta charset="UTF-8">
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen" />
+  <link type="text/css" rel="stylesheet" href="css/style.css" media="screen" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="js/smooth-scroll.js"></script>
+</head>
+
+<body>
+  <nav class="z-depth-0" id="nav-prelims">
+
+    <ul id="nav-title" class="side-nav fixed">
+      <li>Finals</li>
+      <li><a data-scroll href="#java">Java</a>
+        <ul class="nested-menu">
+          <li>
+            <a data-scroll href="#java-api">API</a>
+            <a data-scroll href="#jspstan">JSP Standard Actions</a>
+            <a data-scroll href="#jspcust">JSP Custom Actions</a>
+            <a data-scroll href="#elexpression">EL Expressions</a>
+            <a data-scroll href="#scriplets">Scriplets</a>
+          </li>
+        </ul>
+
+      </li>
+      <li><a data-scroll href="#php">PHP</a>
+        <ul class="nested-menu">
+          <li>
+            <a data-scroll href="#phpdefinition">Definition</a>
+            <a data-scroll href="#superglobals">Superglobals</a>
+            <a data-scroll href="#sessionhandling">Session Handling</a>
+          </li>
+        </ul>
+      </li>
+      <li><a data-scroll href="#php">Node JS</a>
+        <ul class="nested-menu">
+          <li>
+            <a data-scroll href="#definiton">Definition</a>
+            <a data-scroll href="#syntax">Syntax</a>
+            <a data-scroll href="#properties">Properties</a>
+            <a data-scroll href="#serverhttp">HTTP Module</a>
+
+          </li>
+        </ul>
+      </li>
+      <li><a data-scroll href="#securityrisk">Security Risks</a>
+      </li>
+
+    </ul>
+  </nav>
+  <div id="midterms">
+    <nav id="main-nav" class="z-depth-0">
+      <div class="nav-wrapper ">
+        <a href="index.html" class="brand-logo">WebTek</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a class="underline" href="index.html">Home</a></li>
+          <li><a class="underline" href="prelims.html">Prelims</a></li>
+          <li><a class="underline" href="midterms.html">Midterms</a></li>
+          <li><a class="underline" href="finals.html">Finals</a></li>
+        </ul>
+        <ul class="side-nav z-depth-0" id="mobile-demo">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="prelims.html">Prelims</a>
+            <ul class="nested-list">
+              <li><a data-scroll href="prelims.html#www">World Wide Web</a></li>
+              <li><a data-scroll href="prelims.html#http">HTTP</a></li>
+            </ul>
+
+          </li>
+          <li><a href="midterms.html">Midterms</a>
+            <ul class="nested-list">
+              <li><a data-scroll href="midterms.html#html">HTML</a></li>
+              <li><a data-scroll href="midterms.html#css">CSS</a></li>
+              <li><a data-scroll href="midterms.html#js">Javascript</a></li>
+            </ul>
+
+          </li>
+          <li><a href="finals.html">Finals</a>
+            <ul class="nested-list">
+              <li><a data-scroll href="finals.html#java">Java</a></li>
+              <li><a data-scroll href="finals.html#php">PHP</a></li>
+              <li><a data-scroll href="finals.html#nodejs">Node JS</a></li>
+            </ul>
+
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id="java">
+      <h2>Java</h2>
+      <div class="container">
+        <ul class="collapsible" data-collapsible="expandable">
+          <li>
+            <div class="collapsible-header">
+              Java
+            </div>
+            <div class="collapsible-body">
+
+              Java EE
+              <div class="container">
+                Java EE is an open, standards-based development and deployment platform for creating distributed, transactional, reliable, secure, multitier, web-based, server-centric, component-based enterprise applications.</div><br> Java EE
+              Application Model
+              <div class="container">
+                <ul>
+                  <li>Java programming language, Java Virtual Machine (JVM)</li>
+                  <li>Java EE Components
+                    <ul>
+                      <li>Java EE Clients
+                        <div class="container">Application Clients, Applets (embedded in web clients) </div>
+                      </li>
+                      <li>Web Components
+                        <div class="container">Servlets, JavaServer Pages (JSP), JavaServer Faces (JSF) </div>
+                      </li>
+                      <li>Enterprise JavaBeans (EJBM)</li>
+                    </ul>
+                  </li>
+                  <li>Java EE Containers
+                    <div class="container">Client containers, web container, EJB container</div>
+                  </li>
+                  <li>Java EE Server</li>
+
+                </ul>
+              </div>
+              Java EE Web Application
+              <div class="container">
+                Collection of resources installed under a specific subset of the URL namespace of a web application server compliant with the Java EE Specification (e.g. Apache‟s Tomcat, Apache‟s Geronimo, Sun Microsystems‟ Glassfish, IBM‟s
+                WebSphere, etc.)<br>
+                <br>
+                <ul>
+                  <li>
+                    Resources
+                    <div class="container">
+                      Static resources: web pages, images, stylesheets, etc. (serves as is) Dynamic resources: servlets, JSPs Miscellaneous resources: business object classes (e.g. Java Beans, EJB), support libraries, etc.
+                    </div>
+                  </li>
+                  <li>
+                    XML-formatted descriptor and configuration files (web.xml, application.xml, context.xml, etc.)
+                    <div class="container">-Organized into a standard hierarchical structure and typically packaged and deployed as WAR or EAR files</div>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+
+          </li>
+          <li id="java-api">
+            <div class="collapsible-header">
+              API's
+            </div>
+            <div class="collapsible-body">
+              <ul>
+                <li>Java EE APIs</li>
+                <li>Enterprise JavaBeans Technology</li>
+                <li>Java Servlet Technology</li>
+                <li>Java Server Pages</li>
+                <li>Java Server Pages Standard Tag Library</li>
+                <li>Java Server Faces</li>
+                <li>Java Msg Service API</li>
+                <li>Java Transaction API</li>
+                <li>JavaMail API</li>
+                <li>JavaBeans Activation Framework</li>
+                <li>Java API for XML Processing</li>
+                <li>Servlet
+                  <div class="container">
+                    A subpart porgram that runs inside a server. it handles and process a request from a JSP page that will dynamically generate a response.
+                  </div>
+                </li>
+                <li>Java Server Page (JSP)
+                  <div class="container">
+                    Is a technology that manages the content or appearance of Web pages through the use of servlets.
+                  </div>
+                </li>
+                <li>Servlet Processing
+                  <div class="container">
+                    A server side processing that accepts a servlet request that will process and returns a generated response.
+                  </div>
+                </li>
+                <li>Servlet Request
+                  <div class="container">
+                    Defines an object to provide client request information to a servlet. The servlet container creates a ServletRequest object and passes it as an argument to the servlet's service method.
+                  </div>
+                </li>
+                <li>Servlet Response
+                  <div class="container">
+                    is a an interface under Servlet API. Responds to a http request from a browser that will then generate the appropriate response object.
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="jspstan">
+            <div class="collapsible-header">
+              JSP Standard Actions
+            </div>
+            <div class="collapsible-body">
+              <p>These actions use constructs in XML syntax to control the behavior of the servlet engine. You can dynamically insert a file, reuse JavaBeans components, forward the user to another page, or generate HTML for the Java plugin. There is
+                only one syntax for the Action element, as it conforms to the XML standard −</p>
+              <br> &lt;jsp:action_name attribute = "value" /&gt;
+              <br><br>
+              <p>Action elements are basically predefined functions. The following table lists out the available JSP actions −</p>
+              <br>
+              <ul>
+                <li>jsp:include
+                  <div class="container">
+                    Includes a file at the time the page is requested.
+                  </div>
+                </li>
+                <li>jsp:useBean
+                  <div class="container">
+                    Finds or instantiates a JavaBean.
+                  </div>
+                </li>
+                <li>jsp:setProperty
+                  <div class="container">
+                    Sets the property of a JavaBean.
+                  </div>
+                </li>
+                <li>jsp:getProperty
+                  <div class="container">
+                    Inserts the property of a JavaBean into the output.
+                  </div>
+                </li>
+                <li>jsp:forward
+                  <div class="container">
+                    Forwards the requester to a new page.
+                  </div>
+                </li>
+                <li>jsp:plugin
+                  <div class="container">
+                    Generates browserspecific code that makes an OBJECT or EMBED tag for the Java plugin.
+                  </div>
+                </li>
+                <li>jsp:element
+                  <div class="container">
+                    Defines XML elements dynamically.
+                  </div>
+                </li>
+                <li>jsp:attribute
+                  <div class="container">
+                    Defines dynamicallydefined XML element's attribute.
+                  </div>
+                </li>
+                <li>jsp:body
+                  <div class="container">
+                    Defines dynamicallydefined XML element's body.
+                  </div>
+                </li>
+                <li>jsp:text
+                  <div class="container">
+                    Used to write template text in JSP pages and documents.
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="jspcust">
+            <div class="collapsible-header">
+              JSP Custom Actions
+            </div>
+            <div class="collapsible-body">
+              <p>The JavaServer Pages Standard Tag Library (JSTL) is a collection of useful JSP tags which encapsulates the core functionality common to many JSP applications.
+                <br><br> JSTL has support for common, structural tasks such as iteration and conditionals, tags for manipulating XML documents, internationalization tags, and SQL tags. It also provides a framework for integrating the existing custom
+                tags with the JSTL tags.
+              </p>
+
+              <span class="emphasis">Core Tags</span>
+              <p>The core group of tags are the most commonly used JSTL tags. Following is the syntax to include the JSTL Core library in your JSP − <br> &lt;%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %&gt;
+              </p>
+
+              <ul>
+                <li>&lt;c:out&gt;
+                  <div class="container">
+                    Like &lt;%= ... &gt;, but for expressions.</div>
+                </li>
+                <li>&lt;c:set&gt;
+                  <div class="container">
+                    Sets the result of an expression evaluation in a 'scope'</div>
+                </li>
+                <li>&lt;c:remove&gt;
+                  <div class="container">
+                    Removes a scoped variable (from a particular scope, if specified).</div>
+                </li>
+                <li>&lt;c:catch&gt;
+                  <div class="container">
+                    Catches any Throwable that occurs in its body and optionally exposes it.</div>
+                </li>
+                <li>&lt;c:if&gt;
+                  <div class="container">
+                    Simple conditional tag which evalutes its body if the supplied condition is true.</div>
+                </li>
+                <li>&lt;c:choose&gt;
+                  <div class="container">
+                    Simple conditional tag that establishes a context for mutually exclusive conditional operations, marked by &lt;when&gt; and &lt;otherwise&gt;.</div>
+                </li>
+                <li>&lt;c:when&gt;
+                  <div class="container">
+                    Subtag of &lt;choose&gt; that includes its body if its condition evalutes to 'true'.</div>
+                </li>
+                <li>&lt;c:otherwise&gt;
+                  <div class="container">
+                    Subtag of &lt;choose&gt; that follows the &lt;when&gt; tags and runs only if all of the prior conditions evaluated to 'false'.
+                  </div>
+                </li>
+                <li>&lt;c:import&gt;
+                  <div class="container">
+                    Retrieves an absolute or relative URL and exposes its contents to either the page, a String in 'var', or a Reader in 'varReader'.
+                  </div>
+                </li>
+                <li>&lt;c:forEach&gt;
+                  <div class="container">
+                    The basic iteration tag, accepting many different collection types and supporting subsetting and other functionality .
+                  </div>
+                </li>
+                <li>&lt;c:forTokens&gt;
+                  <div class="container">
+                    Iterates over tokens, separated by the supplied delimeters.
+                  </div>
+                </li>
+                <li>&lt;c:param&gt;
+                  <div class="container">
+                    Adds a parameter to a containing 'import' tag's URL.
+                  </div>
+                </li>
+                <li>&lt;c:redirect&gt;
+                  <div class="container">
+                    Redirects to a new URL.
+                  </div>
+                </li>
+                <li>&lt;c:url&gt;
+                  <div class="container">
+                    Creates a URL with optional query parameters
+                  </div>
+                </li>
+              </ul>
+              <br>
+              <p>The JSTL SQL tag library provides tags for interacting with relational databases (RDBMSs) such as Oracle, mySQL, or Microsoft SQL Server. <br><br> Following is the syntax to include JSTL SQL library in your JSP −</p>
+              <br>
+              <ul>
+                <li>&lt;sql:setDataSource&gt;
+                  <div class="container"> Creates a simple DataSource suitable only for prototyping</div>
+                </li>
+                <li>&lt;sql:query&gt;
+                  <div class="container"> Executes the SQL query defined in its body or through the sql attribute.</div>
+                </li>
+                <li>&lt;sql:update&gt;
+                  <div class="container"> Executes the SQL update defined in its body or through the sql attribute.</div>
+                </li>
+                <li>&lt;sql:param&gt;
+                  <div class="container"> Sets a parameter in an SQL statement to the specified value.</div>
+                </li>
+                <li>&lt;sql:dateParam&gt;
+                  <div class="container"> Sets a parameter in an SQL statement to the specified java.util.Date value.</div>
+                </li>
+                <li>&lt;sql:transaction&gt;
+                  <div class="container"> Provides nested database action elements with a shared Connection, set up to execute all statements as one transaction.</div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="elexpression">
+            <div class="collapsible-header">
+              EL Expressions
+            </div>
+            <div class="collapsible-body">
+              <p>JSP Expression Language (EL) makes it possible to easily access application data stored in JavaBeans components. JSP EL allows you to create expressions both (a) arithmetic and (b) logical. Within a JSP EL expression, you can use
+                integers, floating point numbers, strings, the built-in constants true and false for boolean values, and null.</p>
+              <br>
+            </div>
+          </li>
+          <li id="scriplets">
+            <div class="collapsible-header">
+              Scriplets
+            </div>
+            <div class="collapsible-body">
+
+              JSP also allows you to write blocks of Java code inside the JSP. You do this by placing your Java code between &lt;% and %&gt; characters (just like expressions, but without the = sign at the start of the sequence.)
+              <br> This block of code is known as a "scriptlet". By itself, a scriptlet doesn't contribute any HTML (though it can, as we will see down below.) A scriptlet contains Java code that is executed every time the JSP is invoked.
+              <br> Here is a modified version of our JSP from previous section, adding in a scriptlet.
+              <br>
+              <pre>
+                                <code>
+            &lt;HTML&gt;
+            &lt;BODY&gt;
+                &lt;%
+                // This is a scriptlet.  Notice that the "date"
+                // variable we declare here is available in the
+                // embedded expression later on.
+                System.out.println( "Evaluating date now" );
+                java.util.Date date = new java.util.Date();
+                %&gt;
+                Hello!  The time is now &lt;%= date %&gt;
+                &lt;/BODY&gt;
+            &lt;/HTML&gt;
+                                </code>
+                            </pre>
+
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="php">
+      <h2>PHP</h2>
+      <div class="container">
+
+        <ul class="collapsible" data-collapsible="accordion">
+          <li id="phpdefiniton">
+            <div class="collapsible-header">Definition</div>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  <p>recursive acronym for PHP: Hypertext Preprocessor</p>
+                  <p>a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="superglobals">
+            <div class="collapsible-header">Superglobals</div>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  Several predefined variables in PHP are "superglobals", which means they are available in all scopes throughout a script. There is no need to do global $variable; to access them within functions or methods.
+                </li>
+                <br>
+                <li>
+                  <ul>
+                    <li>$GLOBALS
+                      <div class="container">
+                        An associative array containing references to all variables which are currently defined in the global scope of the script. The variable names are the keys of the array.
+                      </div>
+
+                    </li>
+                    <li>$_SERVER
+                      <div class="container">
+                        is an array containing information such as headers, paths, and script locations. The entries in this array are created by the web server. There is no guarantee that every web server will provide any of these; servers may omit
+                        some, or provide others not listed here.
+                      </div>
+                    </li>
+                    <li>$_GET
+                      <div class="container">
+                        An associative array of variables passed to the current script via the URL parameters.
+                      </div>
+                    </li>
+                    <li>$_POST
+                      <div class="container">
+                        An associative array of variables passed to the current script via the HTTP POST method when using application/x-www-form-urlencoded or multipart/form-data as the HTTP Content-Type in the request.
+                      </div>
+                    </li>
+                    <li>$_FILES
+                      <div class="container">
+                        An associative array of items uploaded to the current script via the HTTP POST method. The structure of this array is outlined in the POST method uploads section.
+                      </div>
+                    </li>
+                    <li>$_COOKIE
+                      <div class="container">
+                        An associative array of variables passed to the current script via HTTP Cookies.
+                      </div>
+                    </li>
+                    <li>$_SESSION
+                      <div class="container">
+                        An associative array containing session variables available to the current script.
+                      </div>
+                    </li>
+                    <li>$_REQUEST
+                      <div class="container">
+                        An associative array that by default contains the contents of $_GET, $_POST and $_COOKIE.
+                      </div>
+                    </li>
+                    <li>$_ENV
+                      <div class="container">
+                        An associative array of variables passed to the current script via the environment method.
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+              </ul>
+            </div>
+          </li>
+          <li id="sessionhandling">
+            <div class="collapsible-header">Session Handling</div>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  <p>A session is a way to store information (in variables) to be used across multiple pages. Unlike a cookie, the information is not stored on the users computer.</p>
+                </li>
+              </ul>
+              <br>
+              <ul>
+                <li>Session Functions</li>
+                <li>session_abort — Discard session array changes and finish session</li>
+                <li>session_cache_expire — Return current cache expire</li>
+                <li>session_cache_limiter — Get and/or set the current cache limiter</li>
+                <li>session_commit — Alias of session_write_close</li>
+                <li>session_create_id — Create new session id</li>
+                <li>session_decode — Decodes session data from a session encoded string</li>
+                <li>session_destroy — Destroys all data registered to a session</li>
+                <li>session_encode — Encodes the current session data as a session encoded string</li>
+                <li>session_gc — Perform session data garbage collection</li>
+                <li>session_get_cookie_params — Get the session cookie parameters</li>
+                <li>session_id — Get and/or set the current session id</li>
+                <li>session_is_registered — Find out whether a global variable is registered in a session</li>
+                <li>session_module_name — Get and/or set the current session module</li>
+                <li>session_name — Get and/or set the current session name</li>
+                <li>session_regenerate_id — Update the current session id with a newly generated one</li>
+                <li>session_register_shutdown — Session shutdown function</li>
+                <li>session_register — Register one or more global variables with the current session</li>
+                <li>session_reset — Re-initialize session array with original values</li>
+                <li>session_save_path — Get and/or set the current session save path</li>
+                <li>session_set_cookie_params — Set the session cookie parameters</li>
+                <li>session_set_save_handler — Sets user-level session storage functions</li>
+                <li>session_start — Start new or resume existing session</li>
+                <li>session_status — Returns the current session status</li>
+                <li>session_unregister — Unregister a global variable from the current session</li>
+                <li>session_unset — Free all session variables</li>
+                <li>session_write_close — Write session data and end session</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="nodejs">
+      <h2>Node.JS</h2>
+      <div class="container">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li id="nodejsdefiniton">
+            <div class="collapsible-header">Definition</div>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  <p>The HTTP module provides a way of making Node.js transfer data over HTTP (Hyper Text Transfer Protocol).</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="syntax">
+            <div class="collapsible-header">Syntax</div>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  <p>The syntax for including the HTTP module in your application:</p>
+                  <p>var http = require('http');</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="properties">
+            <div class="collapsible-header">HTTP Properties and Methods</div>
+            <div class="collapsible-body">
+              <table>
+                <tr>
+                  <th>Method</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td>createClient() </td>
+                  <td>Deprecated. Creates a HTTP client</td>
+                </tr>
+                <tr>
+                  <td>createServer()</td>
+                  <td>Creates an HTTP server</td>
+                </tr>
+                <tr>
+                  <td>globalAgent</td>
+                  <td>Returns the HTTP Agent</td>
+                </tr>
+                <tr>
+                  <td>request() </td>
+                  <td>Returns an object containing the user's request</td>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li id="serverhttp">
+            <div class="collapsible-header">HTTP Server Class</div>
+
+            <div class="collapsible-body">Server Methods and Properties
+              <p>When calling the http.createServer() method, a Server class is returned.</p>
+              <p>The Server class has methods and properties of its own:</p>
+              <table>
+                <tr>
+                  <td>server.close() </td>
+                  <td>Closes the server connection</td>
+                </tr>
+                <tr>
+                  <td>server.listen() </td>
+                  <td>Makes the server listen to ports on the computer</td>
+                </tr>
+                <tr>
+                  <td>server.listening </td>
+                  <td>Returns true if the server is listening for connection, otherwise false</td>
+                </tr>
+                <tr>
+                  <td>server.maxHeadersCount </td>
+                  <td>Limits the number of incoming headers</td>
+                </tr>
+                <tr>
+                  <td>server.setTimeout() </td>
+                  <td>Sets the server's timeout value. Default is 2 minutes</td>
+                </tr>
+                <tr>
+                  <td>server.timeout</td>
+                  <td>Sets, or gets, the server's timeout value</td>
+                </tr>
+              </table>
+            </div>
+            <div class="collapsible-body">Server Events
+              <table>
+                <tr>
+                  <td>checkContinue</td>
+                  <td> Occurs when a request with an HTTP Expect: 100­continue is received</td>
+                </tr>
+                <tr>
+                  <td>checkExpectation</td>
+                  <td>Occurs when a request with an HTTP Expect headers is received</td>
+                </tr>
+                <tr>
+                  <td>clientError </td>
+                  <td>Occurs when a client connection gets an error</td>
+                </tr>
+                <tr>
+                  <td>close </td>
+                  <td>Occurs when the server is closing</td>
+                </tr>
+                <tr>
+                  <td>connect</td>
+                  <td>Occurs when a request with an HTTP Connect method is received</td>
+                </tr>
+                <tr>
+                  <td>connection</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>request </td>
+                  <td>Occurs when a request is received</td>
+                </tr>
+                <tr>
+                  <td>upgrade</td>
+                  <td>Occurs when a request for an HTTP upgrade is received</td>
+                </tr>
+              </table>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="securityrisk">
+      <h2>OWASP Top 10 Application Security Risks - 2017</h2>
+      <div class="container">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header">A1-Injection</div>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  Injection flaws, such as SQL, OS, XXE, and LDAP injection occur when untrusted data is sent to an interpreter as part of a command or query. The attacker’s hostile data can trick the interpreter into executing unintended commands or
+                  accessing data without proper authorization.
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header">A2-Broken Authentication and Session Management</div>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  Application functions related to authentication and session management are often implemented incorrectly, allowing attackers to compromise passwords, keys, or session tokens, or to exploit other implementation flaws to assume other
+                  users’ identities (temporarily or permanently).
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header">A3-Cross-Site Scripting (XSS)</div>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  XSS flaws occur whenever an application includes untrusted data in a new web page without proper validation or escaping, or updates an existing web page with user supplied data using a browser API that can create JavaScript. XSS
+                  allows attackers to execute scripts in the victim’s browser which can hijack user sessions, deface web sites, or redirect the user to malicious sites.
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header">A4-Broken Access Control</div>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  Restrictions on what authenticated users are allowed to do are not properly enforced. Attackers can exploit these flaws to access unauthorized functionality and/or data, such as access other users' accounts, view sensitive files,
+                  modify other users’ data, change access rights, etc.
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header">A5-Security Misconfiguration</div>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  Good security requires having a secure configuration defined and deployed for the application, frameworks, application server, web server, database server, platform, etc. Secure settings should be defined, implemented, and
+                  maintained, as defaults are often insecure. Additionally, software should be kept up to date.
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header">A6-Sensitive Data Exposure</div>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  Many web applications and APIs do not properly protect sensitive data, such as financial, healthcare, and PII. Attackers may steal or modify such weakly protected data to conduct credit card fraud, identity theft, or other crimes.
+                  Sensitive data deserves extra protection such as encryption at rest or in transit, as well as special precautions when exchanged with the browser.
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header">A7-Insufficient Attack Protection</div>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  The majority of applications and APIs lack the basic ability to detect, prevent, and respond to both manual and automated attacks. Attack protection goes far beyond basic input validation and involves automatically detecting,
+                  logging, responding, and even blocking exploit attempts. Application owners also need to be able to deploy patches quickly to protect against attacks.
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header">A8-Cross-Site Request Forgery (CSRF)</div>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  A CSRF attack forces a logged-on victim’s browser to send a forged HTTP request, including the victim’s session cookie and any other automatically included authentication information, to a vulnerable web application. Such an attack
+                  allows the attacker to force a victim’s browser to generate requests the vulnerable application thinks are legitimate requests from the victim.
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header">A9-Using Components with Known Vulnerabilities</div>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  Components, such as libraries, frameworks, and other software modules, run with the same privileges as the application. If a vulnerable component is exploited, such an attack can facilitate serious data loss or server takeover.
+                  Applications and APIs using components with known vulnerabilities may undermine application defenses and enable various attacks and impacts.
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header">A10-Underprotected APIs</div>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  Modern applications often involve rich client applications and APIs, such as JavaScript in the browser and mobile apps, that connect to an API of some kind (SOAP/XML, REST/JSON, RPC, GWT, etc.). These APIs are often unprotected and
+                  contain numerous vulnerabilities.
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

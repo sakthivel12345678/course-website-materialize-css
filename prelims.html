@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Systems and Technology | Prelims</title>
+    <meta charset="UTF-8">
+
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/smooth-scroll.js"></script>
+</head>
+
+<body>
+    <nav class="z-depth-0" id="nav-prelims">
+        <ul id="nav-title" class="side-nav fixed">
+            <li>Prelims</li>
+            <li><a data-scroll href="#internet">Internet</a></li>
+            <li><a data-scroll href="#www">World Wide Web</a>
+                <ul class="nested-menu">
+                    <li>
+                        <a data-scroll href="#webdevelopment">Web Development</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a data-scroll href="#http">HTTP</a>
+                <ul class="nested-menu">
+                    <li>
+                        <a data-scroll href="#versions">Version History</a>
+                    </li>
+                    <li>
+                        <a data-scroll href="#fundamentals">Fundamentals</a>
+                    </li>
+                    <li>
+                        <a data-scroll href="#addressing">Resource Addressing</a>
+                    </li>
+                    <li>
+                        <a data-scroll href="#requestmessage">Request Message</a>
+                    </li>
+                    <li>
+                        <a data-scroll href="#responsemessage">Response Message</a>
+                    </li>
+                    <li>
+                        <a data-scroll href=#requestmethods>Request Methods</a>
+                    </li>
+                    <li>
+                        <a data-scroll href="#messageheaders">Message Headers</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a data-scroll href="#statuscodes">Status Codes</a>
+                <ul class="nested-menu">
+                    <li>
+                        <a data-scroll href="#1xxcodes">1xx Informational</a>
+                    </li>
+                    <li>
+                        <a data-scroll href="#2xxcodes">2xx Success</a>
+                    </li>
+                    <li>
+                        <a data-scroll href="#3xxcodes">3xx Redirection</a>
+                    </li>
+                    <li>
+                        <a data-scroll href="#4xxcodes">4xx  Client Error</a>
+                    </li>
+                    <li>
+                        <a data-scroll href="#5xxcodes">5xx Server Error</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+    <div id="prelims">
+        <nav id="main-nav" class="z-depth-0">
+            <div class="nav-wrapper ">
+                <a href="index.html" class="brand-logo">WebTek</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="underline" href="index.html">Home</a></li>
+                    <li><a class="underline" href="prelims.html">Prelims</a></li>
+                    <li><a class="underline" href="midterms.html">Midterms</a></li>
+                    <li><a class="underline" href="finals.html">Finals</a></li>
+                </ul>
+                <ul class="side-nav z-depth-0" id="mobile-demo">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="prelims.html">Prelims</a>
+                        <ul class="nested-list">
+                            <li><a data-scroll href="prelims.html#www">World Wide Web</a></li>
+                            <li><a data-scroll href="prelims.html#http">HTTP</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a href="midterms.html">Midterms</a>
+                        <ul class="nested-list">
+                            <li><a data-scroll href="midterms.html#html">HTML</a></li>
+                            <li><a data-scroll href="midterms.html#css">CSS</a></li>
+                            <li><a data-scroll href="midterms.html#js">Javascript</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a href="finals.html">Finals</a>
+                        <ul class="nested-list">
+                            <li><a data-scroll href="finals.html#java">Java</a></li>
+                            <li><a data-scroll href="finals.html#php">PHP</a></li>
+                            <li><a data-scroll href="finals.html#nodejs">Node JS</a></li>
+                            <li><a data-scroll href="finals.html#securityrisk">Security Risks</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="container" id="internet">
+            <h2>Internet</h2>
+            <div class="container">
+                <ul>
+                    <li>
+                        THE MASSIVE GLOBAL NETWORK OF NETWORK
+                    </li>
+                    <li>
+                        known as <span>INTERNETWORK</span>
+                    </li>
+                    <li>
+                        Originally created for military bases to communicate from one country to another
+                    </li>
+                    <li>
+                        Inter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Different Networks <br> Network&nbsp;: Different nodes<br><br> Therefore, inter + network = Internetwork<br><br>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        There are different Internet Service Providers (ISP) such as:
+                        <ul class="emphasis">
+                            <li>
+                                <span>PLDT</span>
+                            </li>
+                            <li>
+                                Bayantel
+                            </li>
+                            <li>
+                                Smart Co.
+                            </li>
+                            <li>
+                                Globe Telecommunications
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        IP Address: Internet Protocol Address is used to uniquely identify a node<br>
+                        <span class="emphasis"> it provides, uses or makes accessible, either public or private, high level services layered on the communnication and related infrastructure described herein. </span>
+                    </li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <section class="container" id="www">
+            <h2>The World Wide Web (WWW)</h2>
+            <div class="container">
+                <ul>
+                    <li>
+                        information system on the internet that lets documents to be connected to other documents by hypertext links, which enables the user to search by moving one document to another, using the Hypertext Transfer Protocol (HTTP) NOTE: Internet and World Wide Web are logically linked together by a globally unique spaced address
+                    </li>
+                    <li>
+                        <br> - created by Tim Berners-Lee (1989)<br> - originally created for CERN Scientists sharing of information (Geneva, Switzerland)
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        WWW was <strong>NOT</strong> intended for public consumption before, so/ because:<br>
+                        <span class="emphasis">- it was for scientists<br></span>
+                        <span class="emphasis">- it was full of text before<br></span>
+                        <span class="emphasis">- it was so pasive</span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Unlike now that everything is made out of HTML (Hypertext Mark-up Language)
+                    </li>
+                </ul>
+
+            </div>
+            <section class="container" id="webdevelopment">
+                <h3>Web Development</h3>
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">list</i>Web Development</div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li>
+                                    1969: Date year of internet<br>
+                                    <span class="emphasis">: before they are all in packet-switched store and forward</span><br>
+                                </li>
+                                <li>
+                                    1972: Electronic Mail (e-mail) was created which considered as the "The first killer of the Internet"
+                                </li>
+                                <li>
+                                    1989: "The second killer of the internet" was born- The World Wide Web
+                                </li>
+                                <li>
+                                    1997: HTTP was created
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+        </section>
+
+        <section class="container" id="http">
+            <h2>Hypertext Transfer Protocol (HTTP)</h2>
+            <ul id="definition-http">
+                <li>
+                    Application layer communication protocol used to access resources(hypertext/hypermedia) on the World Wide Web(www)
+                </li>
+                <li>
+                    Invented by <span>Tim Berners-Lee</span>
+                </li>
+                <li>
+                    Jointly developed by the W3C and the IETF
+                </li>
+            </ul>
+            <section class="container" id="versions">
+                <h2>Versions</h2>
+                <ul class="collapsible" data-collapsible="expandable">
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">list</i>Version History</div>
+                        <div id="version-details" class="collapsible-body">
+                            <ul>
+                                <li>
+                                    HTTP 0.9 (1997)
+                                </li>
+                                <li>
+                                    HTTP 1.0(RFC 1945, May 1996)
+                                </li>
+                                <li>
+                                    HTTP 1.1(RFC 2068 January 1997)(RFC 2616 June 1999)(RFC 7230-7235, June 2014)
+                                </li>
+                                <li>
+                                    HTTP 2 (RFC 7540, May 2015)
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="fundamentals">
+                <h2>HTTP Fundamentals</h2>
+                <div class="container">
+                    <p>
+                        HTTP runs on top of TCP/IP, using TCP port 80 by default, or TCP Port 443 for HTTPS (HTTP over SSL/TLS).
+                    </p>
+                    <ul class="collapsible" data-collapsible="expandable">
+                        <li>
+                            <div class="collapsible-header">HTTP is based on client-server architecture</div>
+                            <div class="collapsible-body">
+                                <ul class="container">
+                                    <li>
+                                        Clients, aka User Agents(UA)
+                                        <ul class="nested-list">
+                                            <li>web browsers</li>
+                                            <li>web crawlers/spiders</li>
+                                            <li>other end users tools and applications</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Servers
+                                        <ul class="nested-list">
+                                            <li>origin server</li>
+                                            <li>proxy servers</li>
+                                            <li>gateway</li>
+                                            <li>tunnels</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"> HTTP uses a request-response standard protocol</div>
+                            <div class="collapsible-body">
+                                <ul class="container">
+
+                                    <li>the client sends an http request message to the server</li>
+                                    <li>the server processes the request and replies with an HTTP response message</li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"> HTTP is a stateless communication protocol</div>
+                            <div class="collapsible-body">
+                                <ul class="container">
+
+                                    <li>servers do not keep info about clients in-between requests</li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"> HTTP provides support for other functionalities:</div>
+                            <div class="collapsible-body">
+                                <ul class="container">
+
+                                    <li>cache control</li>
+                                    <li>content media type specifications</li>
+                                    <li> language and character set specifications</li>
+                                    <li>content/transfer codings</li>
+                                    <li>content negotiation</li>
+                                    <li>client-server protocol negotiations</li>
+                                    <li>persistent connections</li>
+                                    <li>request pipelining</li>
+                                    <li>authentication/authorization</li>
+                                    <li>etc.</li>
+                                </ul>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="addressing">
+                <h2>HTTP Resource Addressing</h2>
+                <div class="container">
+                    <p>
+                        HTTP Resources are identified using URIs or more specifically, HTTP URL's.
+                    </p>
+                    <ul class="collapsible" data-collapsible="expandable">
+                        <li>
+                            <div class="collapsible-header"> HTTP URL</div>
+                            <div class="collapsible-body">
+                                <ul class="container">
+                                    <li>scheme (http/https)</li>
+                                    <li>
+                                        authority
+                                        <ul class="nested-list">
+                                            <li>user info/authentication credentials</li>
+                                            <li>host name of machine </li>
+                                            <li>port number</li>
+                                        </ul>
+
+                                    </li>
+                                    <li>path to resources</li>
+                                    <li>query</li>
+                                    <li>fragment identifier</li>
+                                </ul>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="requestmessage">
+                <h2>HTTP Request Message</h2>
+                <div class="container">
+                    <p>The request message consists of the following: </p>
+                    <ul class="collapsible" data-collapsible="expandable">
+                        <li>
+                            <div class="collapsible-header">Request Line</div>
+                            <div class="collapsible-body">
+                                <ul class="container">
+                                    <li>Request Line
+                                        <ul class="nested-list">
+                                            <li>Method</li>
+                                            <li>Request URI </li>
+                                            <li>HTTP Protocol Version</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">Message Header</div>
+                            <div class="collapsible-body">
+                                <ul class="container">
+                                    <li>(general, request, and/or entity headers)</li>
+                                    <li>HTTP 1.0 - optional</li>
+                                    <li>HTTP 1.1 - reqires at least the host request header to be provided</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">Empty Line</div>
+                            <div class="collapsible-body">
+                                <ul class="container">
+                                    <li>indicates the end of the header fields</li>
+                                    <li>(CRLF)</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">Message Body (Optional)</div>
+                            <div class="collapsible-body">
+                                <ul class="container">
+                                    <li>aka payload </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="responsemessage">
+                <h2>HTTP Response Message</h2>
+                <div class="container">
+                    <p>The response message consists of the following: </p>
+                    <ul class="collapsible" data-collapsible="expandable">
+                        <li>
+                            <div class="collapsible-header">Status Line</div>
+                            <div class="collapsible-body">
+                                <ul class="container">
+                                    <li>HTTP Protocol Version</li>
+                                    <li>Status Code
+                                        <ul class="nested-list">
+                                            <li>1xx Informational</li>
+                                            <li>2xx Success</li>
+                                            <li>3xx Redirection</li>
+                                            <li>4xx Client Error</li>
+                                            <li>5xx Server Error</li>
+                                        </ul>
+                                    </li>
+                                    <li>Reason Phrase (code)</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">Message Header</div>
+                            <div class="collapsible-body">
+                                <ul class="container">
+                                    <li>(general, request, and/or entity headers)</li>
+                                    <li>HTTP 1.0 - optional</li>
+                                    <li>HTTP 1.1 - reqires at least the host request header to be provided</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">Empty Line</div>
+                            <div class="collapsible-body">
+                                <ul class="container">
+                                    <li>(CRLF)</li>
+                                    <li>indicates the end of the header fields</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">Message Body (Optional)</div>
+                            <div class="collapsible-body">
+                                <ul class="container">
+                                    <li>aka payload </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="requestmethods">
+                <h2>HTTP Request Methods</h2>
+                <div class="container">
+                    <p>HTTP uses a set of request methods to indicate what activity to be executed</p>
+                    <ul class="collapsible" data-collapsible="expandable">
+                        <li>
+                            <div class="collapsible-header"> Request Headers</div>
+                            <div class="collapsible-body">
+                                <ul class="container">
+
+                                    <li>GET - Retrieves the resource identified by the request URL</li>
+                                    <li>HEAD - Retrieves the meta data</li>
+                                    <li>POST - Used to submit form data to the server</li>
+                                    <li>PUT - Used to submit a resource to the server</li>
+                                    <li>DELETE - Deletes a resource in the server</li>
+                                    <li>OPTIONS - Retrieves a list of request method that can be used by a client </li>
+                                    <li>TRACE - Sends back request rendered by the server</li>
+                                    <li>CONNECT - Used to connect to a tunnel</li>
+                                </ul>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">2 Classification of Request Methods</div>
+                            <div class="collapsible-body">
+                                <ul class="container">
+                                    <li>
+                                        Safe Methods
+                                        <ul class="nested-list">
+                                            <li>Safe methods does not change or modify any files in the web page.</li>
+                                            <li>Examples: GET, HEAD, CONNECT </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Idempotent Methods
+                                        <ul class="nested-list">
+                                            <li>Idempotent Methods retrieves the same output even though this method has been used multiple times</li>
+                                            <li>Examples: GET, HEAD, PUT, DELETE, OPTIONS and TRACE</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="messageheaders">
+                <h2>HTTP Message Headers</h2>
+                <div class="container">
+                    <p>The message header consists of the following fields: </p>
+                    <ul class="collapsible" data-collapsible="expandable">
+                        <li>
+                            <div class="collapsible-header">General Header Fields</div>
+                            <div class="collapsible-body">
+                                <ul class="container">
+                                    <li>Cache-Control - Stores a request in a cache</li>
+                                    <li>Connection - Used to indicate if a connection is persistent or not</li>
+                                    <li>Date - Indicates when the request or response was created.</li>
+                                    <li>Pragma - Allows backwards compatibility when used with Http 1.0 caches</li>
+                                    <li>Transfer Encoding - indicates what kind of encoding will be used.</li>
+                                    <li>Trailer - Additional data for the meta data</li>
+                                    <li>Upgrade - Negotiation of what http protocol will be used</li>
+                                    <li>Via - Forwards a message. typically used in proxy</li>
+                                    <li>Warning - Used to indicate the status of a message</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">Request Header Fields</div>
+                            <div class="collapsible-body">
+                                <ul class="container">
+                                    <li>Accept</li>
+                                    <li>Accept-Charset</li>
+                                    <li>Accept-Encoding</li>
+                                    <li>Accept-Language</li>
+                                    <li>Authorization</li>
+                                    <li>Expect</li>
+                                    <li>From</li>
+                                    <li>Host</li>
+                                    <li>If-Match</li>
+                                    <li>If-Modified-Since</li>
+                                    <li>If-Unmodified-Since</li>
+                                    <li>If-None-Match</li>
+                                    <li>If-Range</li>
+                                    <li>Max-Forwards</li>
+                                    <li>Proxy-Authorization</li>
+                                    <li>Range</li>
+                                    <li>Referrer</li>
+                                    <li>TE (Transfer Encodings)</li>
+                                    <li>User Agent</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">Response Header Fields</div>
+                            <div class="collapsible-body">
+                                <ul class="container">
+                                    <li>Accept-Ranges</li>
+                                    <li>ETag (Entity Tag)</li>
+                                    <li>Location</li>
+                                    <li>Proxy-Authenticate</li>
+                                    <li>Retry-After</li>
+                                    <li>Server</li>
+                                    <li>Vary</li>
+                                    <li>WWW-Authenticate</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">Entity Header Fields</div>
+                            <div class="collapsible-body">
+                                <ul class="container">
+                                    <li>Allow</li>
+                                    <li>Content-Encoding</li>
+                                    <li>Content-Language</li>
+                                    <li>Content-Length</li>
+                                    <li>Content-Location</li>
+                                    <li>Content-MD5 (Message Digest)</li>
+                                    <li>Content-Range</li>
+                                    <li>Content-Type</li>
+                                    <li>Expires</li>
+                                    <li>Last-Modified</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="container" id="statuscodes">
+                <h2>Status Codes</h2>
+                <ul id="definition-statuscodes">
+                    <li>
+                        - HTTP response status codes indicate whether a specific HTTP request has been successfully completed
+                    </li>
+                    <li>
+                        - The first digit of the status code specifies one of five standard classes of responses.
+                    </li>
+                    <li>
+                        - The message phrases shown are typical, but any human-readable alternative may be provided.
+                    </li>
+                </ul>
+                <h2 id="1xxcodes">1xx Informational</h2>
+                <table class="bordered">
+                    <thead>
+                        <tr>
+                            <th data-field="id">Status Code</th>
+                            <th data-field="name">Name</th>
+                            <th data-field="price">Definition</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>100</td>
+                            <td>Continue</td>
+                            <td>Indicates that the client should continue with the request.</td>
+                        </tr>
+                        <tr>
+                            <td>101</td>
+                            <td>Switching Protocols</td>
+                            <td>sent in response to an Upgrade request header by the client, and indicates the protocol the server is switching too</td>
+                        </tr>
+                        <tr>
+                            <td>102</td>
+                            <td>Processing (WebDAV)</td>
+                            <td>This code indicates that the server has received and is processing the request, but no response is available yet.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2 id="2xxcodes">2xx Success</h2>
+                <table class="bordered">
+                    <thead>
+                        <tr>
+                            <th data-field="id">Status Code</th>
+                            <th data-field="name">Name</th>
+                            <th data-field="price">Definition</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>200</td>
+                            <td>OK</td>
+                            <td>The request has succeeded</td>
+                        </tr>
+                        <tr>
+                            <td>201</td>
+                            <td>Created</td>
+                            <td>Succeeded and a new resource has been created</td>
+                        </tr>
+                        <tr>
+                            <td>202</td>
+                            <td>Accepted</td>
+                            <td>Request has been received but not yet acted upon</td>
+                        </tr>
+                        <tr>
+                            <td>203</td>
+                            <td>Non-Authorative Information</td>
+                            <td>Returned meta-information set is not exact set as available from the origin server</td>
+                        </tr>
+                        <tr>
+                            <td>204</td>
+                            <td>No Content</td>
+                            <td>No content to send for this request</td>
+                        </tr>
+                        <tr>
+                            <td>205</td>
+                            <td>Reset Content</td>
+                            <td>Sent after accomplishing request to tell user agent reset document view </td>
+                        </tr>
+                        <tr>
+                            <td>206</td>
+                            <td>Partial Content</td>
+                            <td>Used because of range header sent by the client to separate download into multiple streams</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2 id="3xxcodes">3xx Redirection</h2>
+                <table class="bordered">
+                    <thead>
+                        <tr>
+                            <th data-field="id">Status Code</th>
+                            <th data-field="name">Name</th>
+                            <th data-field="price">Definition</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>300</td>
+                            <td>Multiple Choices</td>
+                            <td>Request has more than one possible responses</td>
+                        </tr>
+                        <tr>
+                            <td>301</td>
+                            <td>Moved Permanently</td>
+                            <td>URI of requested resource has been changed</td>
+                        </tr>
+                        <tr>
+                            <td>302</td>
+                            <td>Found</td>
+                            <td> URI of requested resource has been changed temporarily</td>
+                        </tr>
+                        <tr>
+                            <td>303</td>
+                            <td>See Othern</td>
+                            <td>To get requested resource to another URI with an GET request.</td>
+                        </tr>
+                        <tr>
+                            <td>304</td>
+                            <td>Not Modified</td>
+                            <td>Used for caching purposes</td>
+                        </tr>
+                        <tr>
+                            <td>305</td>
+                            <td>Use Proxy</td>
+                            <td>Indication that a requested response must be accessed by a proxy</td>
+                        </tr>
+                        <tr>
+                            <td>306</td>
+                            <td>Unused</td>
+                            <td>Response code is no longer used, it is just reserved currently</td>
+                        </tr>
+                        <tr>
+                            <td>307</td>
+                            <td>Temporary Redirect</td>
+                            <td>To direct client to get requested resource to another URI with same method that used prior request</td>
+                        </tr>
+                        <tr>
+                            <td>308</td>
+                            <td>Permanent Redirect</td>
+                            <td>Resource is now permanently located at another URI</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2 id="4xxcodes">4xx Client Error</h2>
+                <table class="bordered">
+                    <thead>
+                        <tr>
+                            <th data-field="id">Status Code</th>
+                            <th data-field="name">Name</th>
+                            <th data-field="price">Definition</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>400</td>
+                            <td>Bad Request</td>
+                            <td>Server could not understand the request due to invalid syntax</td>
+                        </tr>
+                        <tr>
+                            <td>401</td>
+                            <td>Unauthorized</td>
+                            <td>Authentication is needed to get requested response</td>
+                        </tr>
+                        <tr>
+                            <td>402</td>
+                            <td>Payment Required</td>
+                            <td>Reserved for future use. Initial aim for creating this code was using it for digital payment systems however this is not used currently.</td>
+                        </tr>
+                        <tr>
+                            <td>403</td>
+                            <td>Forbidden</td>
+                            <td>Client does not have access rights to the content so server is rejecting to give proper response</td>
+                        </tr>
+                        <tr>
+                            <td>404</td>
+                            <td>Not Found</td>
+                            <td>Server can not find requested resource</td>
+                        </tr>
+                        <tr>
+                            <td>405</td>
+                            <td>Method Not Allowed</td>
+                            <td>The request method is known by the server but has been disabled and cannot be used</td>
+                        </tr>
+                        <tr>
+                            <td>406</td>
+                            <td>Not Acceptable</td>
+                            <td>Sent when the web server, after performing server-driven content negotiation, doesn't find any content following the criteria given by the user agent</td>
+                        </tr>
+                        <tr>
+                            <td>407</td>
+                            <td>Proxy Authentication Required</td>
+                            <td>Authentication is needed to be done by a proxy.</td>
+                        </tr>
+                        <tr>
+                            <td>408</td>
+                            <td>Required Timeout</td>
+                            <td>Sent on an idle connection by some servers, even without any previous request by the client</td>
+                        </tr>
+                        <tr>
+                            <td>409</td>
+                            <td>Conflict</td>
+                            <td>Sent when a request conflict with current state of server.</td>
+                        </tr>
+                        <tr>
+                            <td>410</td>
+                            <td>Gone</td>
+                            <td>Sent when requested content has been deleted from server.</td>
+                        </tr>
+                        <tr>
+                            <td>411</td>
+                            <td>Length Required</td>
+                            <td>Server rejected the request because the Content-Length header field is not defined and the server requires it.</td>
+                        </tr>
+                        <tr>
+                            <td>412</td>
+                            <td>Precondition Failed</td>
+                            <td>The client has indicated preconditions in its headers which the server does not meet.</td>
+                        </tr>
+                        <tr>
+                            <td>413</td>
+                            <td>Payload Too Large</td>
+                            <td>Request entity is larger than limits defined by server; the server might close the connection or return an Retry-After header field.</td>
+                        </tr>
+                        <tr>
+                            <td>414</td>
+                            <td>URI Too Long</td>
+                            <td>The URI requested by the client is longer than the server is willing to interpret.</td>
+                        </tr>
+                        <tr>
+                            <td>415</td>
+                            <td>Unsupported Media Type</td>
+                            <td>The media format of the requested data is not supported by the server, so the server is rejecting the request.</td>
+                        </tr>
+                        <tr>
+                            <td>416</td>
+                            <td>Required Range Not Satisfiable</td>
+                            <td>The range specified by the Range header field in the request can't be fulfilled; it's possible that the range is outside the size of the target URI's data.</td>
+                        </tr>
+                        <tr>
+                            <td>417</td>
+                            <td>Expectation Failed</td>
+                            <td>This response code means the expectation indicated by the Expect request header field can't be met by the server.</td>
+                        </tr>
+                        <tr>
+                            <td>426</td>
+                            <td>Upgrade Required</td>
+                            <td>The server refuses to perform the request using the current protocol but might be willing to do so after the client upgrades to a different protocol.</td>
+                        </tr>
+                        <tr>
+                            <td>428</td>
+                            <td>Precondition Required</td>
+                            <td>The origin server requires the request to be conditional.</td>
+                        </tr>
+                        <tr>
+                            <td>429</td>
+                            <td>Too Many Requests</td>
+                            <td>The user has sent too many requests in a given amount of time ("rate limiting").</td>
+                        </tr>
+                        <tr>
+                            <td>431</td>
+                            <td>Request Header Fields Too Large</td>
+                            <td>The server is unwilling to process the request because its header fields are too large.</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <h2 id="5xxcodes">5xx Server Error</h2>
+                <table class="bordered">
+                    <thead>
+                        <tr>
+                            <th data-field="id">Status Code</th>
+                            <th data-field="name">Name</th>
+                            <th data-field="price">Definition</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>500</td>
+                            <td>Internal Server Error</td>
+                            <td>The server has encountered a situation it doesn't know how to handle.</td>
+                        </tr>
+                        <tr>
+                            <td>501</td>
+                            <td>Not Implemented</td>
+                            <td>The request method is not supported by the server and cannot be handled.</td>
+                        </tr>
+                        <tr>
+                            <td>502</td>
+                            <td>Bad Gateway</td>
+                            <td>Request has been received but not yet acted upon</td>
+                        </tr>
+                        <tr>
+                            <td>503</td>
+                            <td>Service Unavailable</td>
+                            <td>The server is not ready to handle the request.</td>
+                        </tr>
+                        <tr>
+                            <td>504</td>
+                            <td>Gateway Timeout</td>
+                            <td>This error response is given when the server is acting as a gateway and cannot get a response in time.</td>
+                        </tr>
+                        <tr>
+                            <td>505</td>
+                            <td>HTTP Version Not Supported</td>
+                            <td>The HTTP version used in the request is not supported by the server.</td>
+                        </tr>
+                        <tr>
+                            <td>511</td>
+                            <td>Network Authentication Required</td>
+                            <td>Indicates that the client needs to authenticate to gain network access.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
