@@ -1,5 +1,5 @@
 # Course Website
-A static website for Web Technologies developed in plain HTML and Materialize CSS framework.
+A static website for Web Technologies developed in HTML and Materialize CSS framework.
 
 ## Technologies
 - HTML
